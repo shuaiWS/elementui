@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # vue-jianpin-admin
 
 > A Vue.js project
@@ -19,8 +18,3 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# jianpinAdmin
-vue TypeScript scss webpack element-ui 
->>>>>>> 443d068d2fea20f0cda9dd78331f3eebdf1d3ed5
