@@ -4,7 +4,7 @@
 import * as axios from "axios"
 import Vue from 'vue'
 import App from './App.vue'
-import {routesConfig} from './router'
+import { routesConfig } from './router'
 import Router from 'vue-router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -15,17 +15,17 @@ Vue.config.productionTip = false
 
 let app = null
 
-const router =  new Router({
+const router = new Router({
   routes: routesConfig
 })
 
-router.beforeEach((to,from ,next)=>{
-  console.log('router-->to',to)
-  console.log('router-->from',from)
+router.beforeEach((to, from, next) => {
+  // console.log('router-->to', to)
+  // console.log('router-->from', from)
   next();
 })
 
 app = new Vue({
   router,
-  render :h=>h(App)
+  render: h => h(App)
 }).$mount('#app')

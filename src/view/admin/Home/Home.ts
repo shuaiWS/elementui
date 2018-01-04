@@ -1,4 +1,3 @@
-import Nav from '@/components/Nav/Nav.vue'
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
