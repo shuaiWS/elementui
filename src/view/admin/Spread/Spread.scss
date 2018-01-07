@@ -1,0 +1,13 @@
+.el-input--small {
+    width: 150px;
+}
+
+.el-row {
+    margin-bottom: 20px;
+    & .el-col-6 {
+        padding-right: 20px;
+        box-sizing: border-box;
+        height: 32px;
+        line-height: 32px;
+    }
+}
