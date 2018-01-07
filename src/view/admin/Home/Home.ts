@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
-@Component
+@Component({
+    components: {
+    }
+})
 export default class Home extends Vue {
     constructor() {
         super()

@@ -1,5 +1,5 @@
 <template >
-<el-row class="app-nav" :span="12">
+<el-row class="app-nav" :span="24">
   <el-col >
     <el-menu
       default-active="2"

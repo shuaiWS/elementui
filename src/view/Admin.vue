@@ -3,9 +3,14 @@
     <el-container>
       <el-header>Header</el-header>
       <el-container>
-        <el-aside width="300px"><app-nav/></el-aside>
+        <el-aside width="300px">
+          <app-nav/>
+          </el-aside>
         <el-container>
-          <el-main><router-view/></el-main>
+          <el-main>
+            <div class="main-head"><bread-crumb/></div>
+            <router-view/>
+          </el-main>
           <el-footer>Footer</el-footer>
         </el-container>
       </el-container>
@@ -17,13 +22,15 @@
 import Vue from "vue"
 import Component from "vue-class-component"
 import AppNav from "@/components/AppNav/AppNav.vue"
+import BreadCrumb from "@/components/BreadCrumb/BreadCrumb.vue"
 
 @Component({
   components: {
-    AppNav
+    AppNav,
+    BreadCrumb
   }
 })
-export default class Login extends Vue {
+export default class Admin extends Vue {
   constructor() {
     super()
     console.log("Admin enter")
@@ -33,7 +40,7 @@ export default class Login extends Vue {
 
 <style lang="scss" scopedtype="text/css" >
 .admin{
-    width: 1200px;
+    width: 1350px;
     margin-left: auto;
     margin-right: auto;
 }

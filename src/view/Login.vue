@@ -15,4 +15,4 @@ export default class Login extends Vue {
 }
 </script>
 
-<style lang="scss" scopedtype="text/css" ></style>
+<style lang="scss" scoped type="text/css" ></style>
