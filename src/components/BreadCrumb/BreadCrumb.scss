@@ -1,0 +1,8 @@
+.breadcrumb-box {
+    height: 40px;
+    line-height: 40px;
+    & .el-breadcrumb {
+        height: 40px;
+        line-height: 40px;
+    }
+}

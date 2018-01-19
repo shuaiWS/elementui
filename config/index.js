@@ -10,7 +10,16 @@ module.exports = {
         // Paths
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
-        proxyTable: {},
+        proxyTable: {
+            '/api': {
+                target: "http://manager.sztbskj.com",
+                pathRewrite: {
+                    '^/api': ''
+                },
+                changeOrigin: true, //跨域需要配置
+                secure: false //如果是HTTPS接口，需要配置
+            }
+        },
 
         // Various Dev Server settings
         host: 'localhost', // can be overwritten by process.env.HOST
@@ -55,7 +64,7 @@ module.exports = {
         // Paths
         assetsRoot: path.resolve(__dirname, '../dist'),
         assetsSubDirectory: 'static',
-        assetsPublicPath: '/',
+        assetsPublicPath: './',
 
         /**
          * Source Maps

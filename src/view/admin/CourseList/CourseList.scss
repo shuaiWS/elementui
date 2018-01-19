@@ -1,0 +1,27 @@
+.el-input--middle {
+    width: 300px;
+}
+
+.el-row {
+    margin-bottom: 20px;
+    & .el-col-6 {
+        padding-right: 20px;
+        box-sizing: border-box;
+        height: 32px;
+        line-height: 32px;
+    }
+}
+
+.table-info {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.control-box {
+    padding: 30px 0;
+}
+
+.el-button {
+    text-decoration: none;
+}
