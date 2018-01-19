@@ -1,6 +1,7 @@
 import { adminRoutes } from './../router'
 
 /**
+<<<<<<< HEAD
  * 拷贝
  * @param {Array|Object} target 
  * @param {Array|Object} options 
@@ -20,6 +21,10 @@ export function extend(target, options, deep = false):any {
     }
     return target
 }
+=======
+ * todo
+ */
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 /**
  * 获取面包屑导航
  * @param {Array} fullPath 
@@ -31,7 +36,11 @@ export function getBreadCrumb(fullPath: Array<string>) {
         breadcrumb = [],
         menu,
         len = fullPath.length
+<<<<<<< HEAD
     if (fullPath[0] == '') {
+=======
+    if(fullPath[0]==''){
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
         fullPath.shift()//剔除 ''
     }
     path = `/${fullPath.shift()}` //剔除'admin'
@@ -45,7 +54,11 @@ export function getBreadCrumb(fullPath: Array<string>) {
         })
     });
     return breadcrumb
+<<<<<<< HEAD
 }
 /**
  * todo
  */
+=======
+}
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5

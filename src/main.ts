@@ -16,6 +16,10 @@ import axios from "axios"
 // import 
 
 Vue.use(ElementUI)
+<<<<<<< HEAD
+=======
+Vue.use(Router)
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 Vue.use(Vuex)
 Vue.config.productionTip = false
 
@@ -33,6 +37,7 @@ router.beforeEach((to, from, next) => {
   }
 })
 
+<<<<<<< HEAD
 router.afterEach((to, from) => {
   let fullPath = to.fullPath.split('/')
   let path = fullPath[fullPath.length-1]
@@ -44,6 +49,20 @@ router.afterEach((to, from) => {
   store.commit("setBreadCrumb", [{
     title: to.meta.title,
     path: to.fullPath
+=======
+// router.beforeEach((to, from, next) => {
+//   next();
+// })
+
+router.afterEach((to, from) => {
+  console.log('router-->to', to)
+  console.log('router-->from', from)
+  // let path = to.fullPath.split("/")
+  // let breadCrumb = getBreadCrumb(path)
+  store.commit("setBreadCrumb",[{
+    title:to.meta.title,
+    path:to.fullPath
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
   }])
 })
 // axios 配置

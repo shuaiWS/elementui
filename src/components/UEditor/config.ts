@@ -3,7 +3,11 @@ export const UEditorConfig = {
     serverUrl:'',//[默认值：URL + "php/controller.php"]  服务器统一请求接口路径
     autoHeightEnabled: true,//是否自动长高，默认true
     autoFloatEnabled: false,//是否保持toolbar的位置不动，默认true
+<<<<<<< HEAD
     initialFrameWidth: 900,//初始化编辑器宽度，默认1000
+=======
+    initialFrameWidth: 800,//初始化编辑器宽度，默认1000
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
     initialFrameHeight: 500,//初始化编辑器高度，默认320
     enableAutoSave: false, //启用自动保存
     maximumWords:10000,//允许的最大字符数

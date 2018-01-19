@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
 <el-row class="app-nav" :span="24" >
+=======
+<el-row class="app-nav" :span="24">
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
   <el-col >
     <el-menu
       :default-active="active"
@@ -16,6 +20,7 @@
         </el-menu-item>
         <el-submenu :index="menu.path" v-if="menu.children">
           <template slot="title">{{menu.meta.title}}</template>
+<<<<<<< HEAD
             <!-- 第二层 menu start -->
             <div v-for="(sub1,j) in menu.children" :key="j" v-if="sub1.meta">
                 <el-menu-item :index="sub1.path" v-if="!sub1.children && sub1.meta.inNav">
@@ -34,6 +39,26 @@
                             <template slot="title">{{sub2.meta.title}}</template>
                         </el-submenu>
                     </div>
+=======
+<!-- 第二层 menu start -->
+<div v-for="(sub1,j) in menu.children" :key="j" v-if="sub1.meta">
+    <el-menu-item :index="sub1.path" v-if="!sub1.children && sub1.meta.inNav">
+        <i class="el-icon-menu" v-if="sub1.meta.icon" :class="'el-icon-'+sub1.meta.icon"></i>
+        <span slot="title">{{sub1.meta.title}}</span>
+    </el-menu-item>
+    <el-submenu :index="sub1.path" v-if="sub1.children">
+        <template slot="title">{{sub1.meta.title}}</template>
+        <!-- 第三层 menu start -->
+        <div v-for="(sub2,k) in menu.children" :key="k" v-if="sub2.meta">
+            <el-menu-item :index="sub2.path" v-if="!sub2.children && sub2.meta.inNav">
+                <i class="el-icon-menu" v-if="sub2.meta.icon" :class="'el-icon-'+sub2.meta.icon"></i>
+                <span slot="title">{{sub2.meta.title}}</span>
+            </el-menu-item>
+            <el-submenu :index="sub2.path" v-if="sub2.children">
+                <template slot="title">{{sub2.meta.title}}</template>
+            </el-submenu>
+        </div>
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
         <!-- 第三层 menu end -->
     </el-submenu>
 </div>

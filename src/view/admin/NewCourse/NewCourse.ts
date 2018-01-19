@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
+<<<<<<< HEAD
 // import UEditor from '@/components/UEditor/UEditor.vue'
 import { BASEURL } from "./../../../api/storge"
 import { extend } from "./../../../api/common"
@@ -63,11 +64,21 @@ interface pageDataM {
     }[]
     tagInputValue: string                //标签内容
     tagInputVisible: boolean             //是否显示添加标签输入框
+=======
+import UEditor from '@/components/UEditor/UEditor.vue'
+
+interface formeDataM {
+    courseTitle: String
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 }
 
 @Component({
     components: {
+<<<<<<< HEAD
         // UEditor
+=======
+        UEditor
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
     }
 })
 export default class NewCourse extends Vue {
@@ -429,6 +440,7 @@ export default class NewCourse extends Vue {
         this.formData.chapterlist[index].content = response.data
         this.$message.success("上传成功")
     }
+<<<<<<< HEAD
 
     /**
      * 删除课程目录图
@@ -560,4 +572,57 @@ export default class NewCourse extends Vue {
         })
     }
 
+=======
+    private formeData = {}
+    private dynamicTags = ['标签一', '标签二', '标签三']
+    private tagInputVisible = false
+    private tagInputValue = ''
+    private rules = {}
+    private ruleForm = {
+        name: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: '',
+        charge: '',  //收费标准
+        audition: '' //试听
+    }
+
+    private handleCommand(command:string) {
+        this.$message('click on item ' + command);
+    }
+
+    private editorBlur($event:Event): void {
+        this.$message('click on item ' + $event);
+    }
+    
+    private tagHandleClose(tag): void {
+        this.dynamicTags.splice(this.dynamicTags.indexOf(tag), 1);
+    }
+
+    private showTagInput(): void {
+        this.tagInputVisible = true;
+        this.$nextTick(() => {
+            let saveTagInput:any = this.$refs.saveTagInput
+            saveTagInput.$refs.input.focus();
+        });
+    }
+
+    private tagHandleInputConfirm(): void {
+        let inputValue = this.tagInputValue;
+        if (inputValue) {
+            this.dynamicTags.push(inputValue);
+        }
+        this.tagInputVisible = false;
+        this.tagInputValue = '';
+    }
+
+    // private destroyed() {
+    //     this.destroyEditor = true
+    //     console.log("我被销毁了")
+    // }
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 }

@@ -11,6 +11,7 @@ export default class Order extends Vue{
         console.log("Order enter")
     }
     private data
+<<<<<<< HEAD
     private tableData= [{
         a:'a',
         b:'b',
@@ -67,4 +68,6 @@ export default class Order extends Vue{
     private handleCommand(command:string) {
         this.$message('click on item ' + command);
     }
+=======
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 }

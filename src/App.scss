@@ -6,6 +6,7 @@
     color: #2c3e50;
 }
 
+<<<<<<< HEAD
 html,
 body {
     height: 100%;
@@ -13,6 +14,8 @@ body {
     padding: 0;
 }
 
+=======
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 
 /*
     font-color start 
@@ -105,6 +108,7 @@ body {
 
 
 /*
+<<<<<<< HEAD
     align start
 */
 
@@ -142,24 +146,47 @@ body {
 
 .fr {
     float: right;
+=======
+    padding start
+*/
+
+.padd20 {
+    padding: 20px;
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 }
 
 
 /*
+<<<<<<< HEAD
     float end
+=======
+    padding end
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 */
 
 
 /*
+<<<<<<< HEAD
     flex start
 */
 
 .flex-row {
     display: flex;
     justify-content: space-between;
+=======
+    align start
+*/
+
+.align-right {
+    text-align: right;
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 }
 
 
 /*
+<<<<<<< HEAD
     flex end
+=======
+    align end
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 */

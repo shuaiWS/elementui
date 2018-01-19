@@ -1,5 +1,6 @@
 <template>
   <div>   
+<<<<<<< HEAD
     <div class="block">
       <span>欢迎你，丰盛管理员</span>
       <router-link class="el-button el-button--primary" :to="{name: 'newCourse'}">新建课程</router-link>
@@ -88,6 +89,19 @@
         </div>
       </div>
     </div>
+=======
+    <el-row>
+      <el-col :span="24">
+        <span>欢迎你，丰盛管理员</span>
+        <el-button>新建课程</el-button>
+      </el-col>
+    </el-row>   
+    <el-row>
+      <el-col :span="6">
+
+      </el-col>
+    </el-row>
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
   </div>
 </template>
 

@@ -22,10 +22,18 @@
       </div>
     </el-header>
     <el-container>
+<<<<<<< HEAD
       <el-container  class="el-common">
         <el-aside width="300px">
           <app-nav />
         </el-aside>
+=======
+      <el-header>Header</el-header>
+      <el-container>
+        <el-aside width="300px">
+          <app-nav/>
+          </el-aside>
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
         <el-container>
           <el-main>
             <div class="main-head"><bread-crumb/></div>
@@ -43,9 +51,12 @@ import Vue from "vue"
 import Component from "vue-class-component"
 import AppNav from "@/components/AppNav/AppNav.vue"
 import BreadCrumb from "@/components/BreadCrumb/BreadCrumb.vue"
+<<<<<<< HEAD
 import { USERNAME,COOKID }  from "./../api/storge"
 import { delCookie } from "./../api/cookie"
 import { router } from './../router'
+=======
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
 
 @Component({
   components: {
@@ -79,6 +90,7 @@ export default class Admin extends Vue {
 
 <style lang="scss" scopedtype="text/css" >
 .admin{
+<<<<<<< HEAD
   & .el-aside {
       & .app-nav {
           height: 100%;
@@ -127,6 +139,9 @@ export default class Admin extends Vue {
   & .el-common{
     min-width: 1400px;
     max-width: 1400px;
+=======
+    width: 1350px;
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
     margin-left: auto;
     margin-right: auto;
   }

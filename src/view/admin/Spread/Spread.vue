@@ -1,19 +1,35 @@
 <template>
+<<<<<<< HEAD
   <div   class="block">
     <div  class="block">
       <el-input v-model="input" placeholder="请输入渠道名称 / 渠道编号" size="middle"></el-input>
       <el-button type="primary">搜索</el-button>
       <el-button type="primary" @click="centerDialogVisible = true">新建推广</el-button> 
+=======
+  <div>
+    <div  class="block">
+      <el-input v-model="input" placeholder="请输入内容" size="small"></el-input>
+      <el-button type="primary">搜索</el-button>
+      <el-button type="primary" @click="centerDialogVisible = true">点击打开 Dialog</el-button> 
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
     </div>
     <div  class="block">
       <el-dialog  title="新建推广"  :visible.sync="centerDialogVisible"  width="30%"  center>
         <el-row>
           <el-col :span="6" class="align-right">推广名称</el-col>
+<<<<<<< HEAD
           <el-col :span="18"><el-input v-model="input" placeholder="请输入推广名称" size="small"></el-input></el-col>
         </el-row>
         <el-row>
           <el-col :span="6" class="align-right">推广ID</el-col>
           <el-col :span="18"><el-input v-model="input" placeholder="请输入推广ID" size="small"></el-input></el-col>
+=======
+          <el-col :span="18"><el-input v-model="input" placeholder="请输入内容" size="small"></el-input></el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="6" class="align-right">推广ID</el-col>
+          <el-col :span="18"><el-input v-model="input" placeholder="请输入内容" size="small"></el-input></el-col>
+>>>>>>> d0a2e3c2388ea7da928aff3fd81943e2f895c4f5
         </el-row>
         <span slot="footer" class="dialog-footer">
           <el-button @click="centerDialogVisible = false">取 消</el-button>
